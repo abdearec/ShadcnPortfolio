@@ -1,16 +1,16 @@
 import { Button } from "@/components/ui/button";
-import { LogInIcon } from "lucide-react";
+import { FileTextIcon } from "lucide-react";
 import Link from "next/link";
 
 function HomePage() {
   return (
     <>
-      <h1 className="flex gap-3 items-center">
-        <LogInIcon size={50} className="text-green-500" /> LoginPage
+      <h1 className="flex gap-3 items-center uppercase">
+        <FileTextIcon size={50} className="text-emerald-500" /> bookkeeper
       </h1>
       <p>The best dashboard to manage inventory online</p>
       <div className="flex gap-2 items-center">
-        <Button className="bg-green-500" asChild>
+        <Button asChild>
           <Link href="/login">Log in</Link>
         </Button>
         <small>or</small>
